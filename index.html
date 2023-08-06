@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vagabonding</title>
     <style>
+      body {
+        background-color: #7c9d96;
+        padding: 10px 10px;
+      }
       header {
         max-width: 1200px;
         margin: 0 auto;
@@ -18,6 +22,7 @@
         background-repeat: no-repeat;
         text-align: center;
         padding: 60px 0px;
+        border-radius: 10px;
       }
       header h1 {
         color: white;
@@ -36,7 +41,10 @@
         border: none;
       }
       .container {
-        padding: 30px 10px;
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
       }
       .embed {
         width: 100%;
@@ -64,16 +72,24 @@
         curiosity and adventure.
       </p>
       <button>Join us</button>
-      <div class="container">
-        <iframe
-          class="embed"
-          src="https://www.youtube.com/embed/YMtlO6RtKuQ?start=21"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
     </header>
+    <div class="container">
+      <iframe
+        class="embed"
+        src="https://www.youtube.com/embed/YMtlO6RtKuQ?start=21"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        class="embed"
+        src="https://www.youtube.com/embed/1-gbwDL3uoY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
   </body>
 </html>
