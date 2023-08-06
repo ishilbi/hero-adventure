@@ -4,39 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vagabonding</title>
+    <style>
+      header {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 60px 0px;
+      }
+      header h1 {
+        color: white;
+      }
+      header h3 {
+        color: white;
+      }
+      header p {
+        color: azure;
+        margin-bottom: 30px;
+        padding: 10px 10px;
+      }
+      header button {
+        padding: 8px 15px;
+        border-radius: 4px;
+        border: none;
+      }
+      .container {
+        padding: 30px 10px;
+      }
+      .embed {
+        width: 100%;
+        aspect-ratio: 21/9;
+        border-radius: 16px;
+      }
+      @media (max-width: 800px) {
+        header {
+          padding: 30px 0;
+        }
+        header h1 {
+          font-size: 20px;
+        }
+      }
+    </style>
   </head>
-  <style>
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .embed {
-      width: 100%;
-      aspect-ratio: 21/9;
-      border-radius: 16px;
-    }
-  </style>
   <body>
-    <!--Embeds/iframes information from other 
-      websites. Adding pieces of content to your
-       website and making them responsive-->
-    <div class="container">
-      <iframe
-        class="embed"
-        src="https://open.spotify.com/embed/track/3k79jB4aGmMDUQzEwa46Rz?utm_source=generator"
-        frameborder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-      ></iframe>
-      <iframe
-        class="embed"
-        src="https://www.youtube.com/embed/hqmeM_Zz5Ak"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
+    <header>
+      <h3>Anywhere, Everywhere</h3>
+      <h1>Vagabonding</h1>
+      <p>
+        Vagabonding is an ode to long-term travel. It advises how to physically
+        and mentally prepare for an extended journey, but more importantly
+        suggests an uncommon outlook to living life with a constant sense of
+        curiosity and adventure.
+      </p>
+      <button>Join us</button>
+      <div class="container">
+        <iframe
+          class="embed"
+          src="https://www.youtube.com/embed/YMtlO6RtKuQ?start=21"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </header>
   </body>
 </html>
